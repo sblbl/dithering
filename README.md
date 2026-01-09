@@ -49,28 +49,28 @@ Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of 
     <thead>
         <tbody>
             <tr>
-                <td style="aspect-ratio: 1">1</td>
-                <td style="aspect-ratio: 1">2</td>
-                <td style="aspect-ratio: 1">3</td>
-                <td style="aspect-ratio: 1">5</td>
+                <td style="text-align: center; aspect-ratio: 1">1</td>
+                <td style="text-align: center; aspect-ratio: 1">2</td>
+                <td style="text-align: center; aspect-ratio: 1">3</td>
+                <td style="text-align: center; aspect-ratio: 1">5</td>
             </tr>
              <tr>
-                <td style="aspect-ratio: 1">5</td>
-                <td style="aspect-ratio: 1">6</td>
-                <td style="aspect-ratio: 1">7</td>
-                <td style="aspect-ratio: 1">8</td>
+                <td style="text-align: center; aspect-ratio: 1">5</td>
+                <td style="text-align: center; aspect-ratio: 1">6</td>
+                <td style="text-align: center; aspect-ratio: 1">7</td>
+                <td style="text-align: center; aspect-ratio: 1">8</td>
             </tr>
             <tr>
-                <td style="aspect-ratio: 1">9</td>
-                <td style="aspect-ratio: 1">10</td>
-                <td style="aspect-ratio: 1">11</td>
-                <td style="aspect-ratio: 1">12</td>
+                <td style="text-align: center; aspect-ratio: 1">9</td>
+                <td style="text-align: center; aspect-ratio: 1">10</td>
+                <td style="text-align: center; aspect-ratio: 1">11</td>
+                <td style="text-align: center; aspect-ratio: 1">12</td>
             </tr>
             <tr>
-                <td style="aspect-ratio: 1">13</td>
-                <td style="aspect-ratio: 1">14</td>
-                <td style="aspect-ratio: 1">15</td>
-                <td style="aspect-ratio: 1">16</td>
+                <td style="text-align: center;  aspect-ratio: 1">13</td>
+                <td style="text-align: center;  aspect-ratio: 1">14</td>
+                <td style="text-align: center;  aspect-ratio: 1">15</td>
+                <td style="text-align: center;  aspect-ratio: 1">16</td>
             </tr>
         </tbody>
   </thead>

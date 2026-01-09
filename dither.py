@@ -29,7 +29,7 @@ def update_error_matrix(error_matrix, error, x, y):
 	if x < columns -1:
 		error_matrix[x + 1][y] += error / 16 * 3 # based on floyd-steinberg
 	if x < columns -1 and y < rows -1: 
-		error_matrix[x + 1][y + 1] += error / 16
+		error_matrix[x + 1][y + 1] += error / 16 # based on floyd-steinberg
 	return error_matrix
 
 def set_color(pixel): 

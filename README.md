@@ -17,17 +17,16 @@ The most naïve approach for dithering is _threshold_, that simply convert a pix
 
 
 <div style='display: flex;'>
-<div style='display: flex; flex-direction: column;' >
-<!-- ![original](/assets/original.jpeg) -->
-<img src="/assets/original.jpeg">
-<p>original</p>
-</div>
-<div style='display: flex; flex-direction: column;' >
-![threshold](/assets/threshold.png)
-<p>threshold</p>
-</div>
-<div style='display: flex; flex-direction: column;' >
-![error diffusion](/assets/dithered.png)
-<p>error diffusion</p>
-</div>
+    <div style='display: flex; flex-direction: column;' >
+        <img src="/assets/original.jpeg">
+        <p>original</p>
+    </div>
+    <div style='display: flex; flex-direction: column;' >
+        <img src="/assets/threshold.png">
+        <p>threshold</p>
+    </div>
+    <div style='display: flex; flex-direction: column;' >
+        <img src="/assets/dithered.png">
+        <p>error diffusion</p>
+    </div>
 </div>

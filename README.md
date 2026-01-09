@@ -25,25 +25,10 @@ The most naïve approach for dithering is _threshold_, that simply convert a pix
         </tr>
         <tbody>
             <tr>
-                <td><img src="/assets/original.jpeg">/td>
+                <td><img src="/assets/original.jpeg"></td>
                 <td><img src="/assets/threshold.png"></td>
                 <td><img src="/assets/dithered.png"></td>
             </tr>
         </tbody>
   </thead>
 </table>
-    <div style='width: 100%; display: flex; align-items:center; justify-content: center; '>
-        <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
-            <img src="/assets/original.jpeg">
-            <p>original</p>
-        </div>
-        <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
-            <img src="/assets/threshold.png">
-            <p>threshold</p>
-        </div>
-        <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
-            <img src="/assets/dithered.png">
-            <p>error diffusion</p>
-        </div>
-    </div>
-</foreignObject>

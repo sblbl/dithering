@@ -16,6 +16,22 @@ Image dithering is a processing technique that, usually, converts a color or gra
 The most naïve approach for dithering is _threshold_, that simply convert a pixel value to black (0) or white (255) according to its value with respect of a threshold (usually 128, half of the number of gray tones that is 256). This strategy, however, produces high-contrast images where a lot of detail is lost.
 
 <foreignObject width="100%" height="100%">
+<table>
+    <thead>
+        <tr>
+            <th scope="col">original</th>
+            <th scope="col">threshold</th>
+            <th scope="col">error diffusion</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td><img src="/assets/original.jpeg">/td>
+                <td><img src="/assets/threshold.png"></td>
+                <td><img src="/assets/dithered.png"></td>
+            </tr>
+        </tbody>
+  </thead>
+</table>
     <div style='width: 100%; display: flex; align-items:center; justify-content: center; '>
         <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
             <img src="/assets/original.jpeg">

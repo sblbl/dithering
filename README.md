@@ -42,7 +42,7 @@ Dithering with error diffusion, instead, diffuses the _quantisation error_ among
 
 Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of an image, one pixel at a time. 
 
-<foreignObject>
+<foreignObject width="100%">
     <style>
         .matrix-cell : {
             width: 25%;
@@ -52,9 +52,9 @@ Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of 
             justify-content: center;
         }
     </style>
+<table style="width: 100%; table-layout: fixed; ">
 </foreignObject>
 
-<table style="width: 100%; table-layout: fixed; ">
     <caption>
         Order of pixel processing in a 4 x 4 pixels image
     </caption>

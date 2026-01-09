@@ -53,8 +53,6 @@ Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of 
         }
     </style>
 <table style="width: 100%; table-layout: fixed; ">
-</foreignObject>
-
     <caption>
         Order of pixel processing in a 4 x 4 pixels image
     </caption>
@@ -87,6 +85,7 @@ Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of 
         </tbody>
   </thead>
 </table>
+</foreignObject>
 
 When a pixel is processed by the algorithm, its grayscale value (0-255) is compared to a threshold, in this case 128; if the value is greater than the threshold, the pixel becomes white (255), otherwhise black (0). 
 

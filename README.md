@@ -42,35 +42,35 @@ Dithering with error diffusion, instead, diffuses the _quantisation error_ among
 
 Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of an image, one pixel at a time. 
 
-<table style="table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed; ">
     <caption>
         Order of pixel processing in a 4 x 4 pixels image
     </caption>
     <thead>
         <tbody>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>5</td>
+                <td style="aspect-ratio: 1">1</td>
+                <td style="aspect-ratio: 1">2</td>
+                <td style="aspect-ratio: 1">3</td>
+                <td style="aspect-ratio: 1">5</td>
             </tr>
              <tr>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
+                <td style="aspect-ratio: 1">5</td>
+                <td style="aspect-ratio: 1">6</td>
+                <td style="aspect-ratio: 1">7</td>
+                <td style="aspect-ratio: 1">8</td>
             </tr>
             <tr>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
+                <td style="aspect-ratio: 1">9</td>
+                <td style="aspect-ratio: 1">10</td>
+                <td style="aspect-ratio: 1">11</td>
+                <td style="aspect-ratio: 1">12</td>
             </tr>
             <tr>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
+                <td style="aspect-ratio: 1">13</td>
+                <td style="aspect-ratio: 1">14</td>
+                <td style="aspect-ratio: 1">15</td>
+                <td style="aspect-ratio: 1">16</td>
             </tr>
         </tbody>
   </thead>

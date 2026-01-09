@@ -16,18 +16,18 @@ Image dithering is a processing technique that, usually, converts a color or gra
 The most naïve approach for dithering is _threshold_, that simply convert a pixel value to black (0) or white (255) according to its value with respect of a threshold (usually 128, half of the number of gray tones that is 256). This strategy, however, produces high-contrast images where a lot of detail is lost.
 
 <foreignObject width="100%" height="100%">
-<div style='width:100%; display: flex; align-items:center; justify-content: center; '>
-    <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
-        <img src="/assets/original.jpeg">
-        <p>original</p>
+    <div style='width: 100%; display: flex; align-items:center; justify-content: center; '>
+        <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
+            <img src="/assets/original.jpeg">
+            <p>original</p>
+        </div>
+        <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
+            <img src="/assets/threshold.png">
+            <p>threshold</p>
+        </div>
+        <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
+            <img src="/assets/dithered.png">
+            <p>error diffusion</p>
+        </div>
     </div>
-    <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
-        <img src="/assets/threshold.png">
-        <p>threshold</p>
-    </div>
-    <div style='display: flex; flex-direction: column; width: 30%; max-width: 100px;' >
-        <img src="/assets/dithered.png">
-        <p>error diffusion</p>
-    </div>
-</div>
 </foreignObject>

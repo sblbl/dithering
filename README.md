@@ -42,6 +42,18 @@ Dithering with error diffusion, instead, diffuses the _quantisation error_ among
 
 Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of an image, one pixel at a time. 
 
+<foreignObject>
+    <style>
+        .matrix-cell : {
+            width: 25%;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</foreignObject>
+
 <table style="width: 100%; table-layout: fixed; ">
     <caption>
         Order of pixel processing in a 4 x 4 pixels image
@@ -49,28 +61,28 @@ Loyd-Steinberg dithering proceeds from left to right, and from top to bottom of 
     <thead>
         <tbody>
             <tr>
-                <td style="text-align: center; aspect-ratio: 1">1</td>
-                <td style="text-align: center; aspect-ratio: 1">2</td>
-                <td style="text-align: center; aspect-ratio: 1">3</td>
-                <td style="text-align: center; aspect-ratio: 1">5</td>
+                <td class="matrix-cell">1</td>
+                <td class="matrix-cell">2</td>
+                <td class="matrix-cell">3</td>
+                <td class="matrix-cell">5</td>
             </tr>
              <tr>
-                <td style="text-align: center; aspect-ratio: 1">5</td>
-                <td style="text-align: center; aspect-ratio: 1">6</td>
-                <td style="text-align: center; aspect-ratio: 1">7</td>
-                <td style="text-align: center; aspect-ratio: 1">8</td>
+                <td class="matrix-cell">5</td>
+                <td class="matrix-cell">6</td>
+                <td class="matrix-cell">7</td>
+                <td class="matrix-cell">8</td>
             </tr>
             <tr>
-                <td style="text-align: center; aspect-ratio: 1">9</td>
-                <td style="text-align: center; aspect-ratio: 1">10</td>
-                <td style="text-align: center; aspect-ratio: 1">11</td>
-                <td style="text-align: center; aspect-ratio: 1">12</td>
+                <td class="matrix-cell">9</td>
+                <td class="matrix-cell">10</td>
+                <td class="matrix-cell">11</td>
+                <td class="matrix-cell">12</td>
             </tr>
             <tr>
-                <td style="text-align: center;  aspect-ratio: 1">13</td>
-                <td style="text-align: center;  aspect-ratio: 1">14</td>
-                <td style="text-align: center;  aspect-ratio: 1">15</td>
-                <td style="text-align: center;  aspect-ratio: 1">16</td>
+                <td class="matrix-cell"">13</td>
+                <td class="matrix-cell"">14</td>
+                <td class="matrix-cell"">15</td>
+                <td class="matrix-cell"">16</td>
             </tr>
         </tbody>
   </thead>

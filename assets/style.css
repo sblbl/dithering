@@ -1,0 +1,7 @@
+ .matrix-cell : {
+    width: 25%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -37,6 +37,7 @@ def set_color(pixel):
 
 def dither(grayscale_image_matrix, error_matrix):	
 	dithered_image = np.zeros(grayscale_image_matrix.shape)
+	frame = "/Users/marta/Desktop/marta/dithering/temp/{}-{}.png"
 	for x, row in enumerate(grayscale_image_matrix):
 		for y, pixel in enumerate(row):
 			dithered_pixel = pixel + error_matrix[x][y]
@@ -45,6 +46,13 @@ def dither(grayscale_image_matrix, error_matrix):
 
 			pixel_error = dithered_pixel - dithered_pixel_color
 			error_matrix = update_error_matrix(error_matrix, pixel_error, x, y) 
+			im = Image.fromarray(dithered_image.astype(np.uint8), mode="L")
+			im = im.resize(
+                (im.width * 10, im.height * 10),
+                resample=Image.Resampling.NEAREST
+            )
+			print(f"Saving frame {"{:03d}".format(x)}-{"{:03d}".format(y)}")
+			im.save(frame.format("{:03d}".format(x), "{:03d}".format(y)))
 	im = Image.fromarray(dithered_image)
 	im.show()
 

@@ -59,6 +59,8 @@ In a way, the R, G, and B channels can be seen as different layers of a picture,
 
 > <p style="font-size: 12px;">Views of the same picture's Red, Green, and Blue channels: darker areas are where a color is most promininent</p>
 
+#### RGB to grayscale
+
 In order to simplest perform the Loyd Steinberg error diffusion algorithm, however, it's better to work on a single level, or channel. In order not to loose too much visual information it's usually better to convert the picture data from RGB into grayscale. For every pixel in every channel, the mean of the R, G, and B values respectively (all between 0 and 255) is performed. In this way, we pass from a matrix of shape (image_width, image_heigth, 3) to one of shape (image_width, image_heigth, 1). There are other methods to convert RGB to grayscale, but mean is one of the most intuitive.
 
 <img src="/assets/example-rgb-to-grayscale.svg" alt="grayscale conversion">
@@ -67,7 +69,7 @@ In order to simplest perform the Loyd Steinberg error diffusion algorithm, howev
 
 #### Color thresholding
 
-Each pixel is parsed once at a time. First, of all, the pixel value (0-255) is parsed via a threshold funciton, where the threshold is 128: if the value is less than it, it becomes black (0), otherwhise white (255).
+Each pixel is parsed once at a time. First, of all, the pixel value (0-255) is parsed via a threshold funciton, where the threshold is 128 (256/2): if the value is less than it, it becomes black (0), otherwise white (255).
 
 #### Error computation
 
@@ -88,5 +90,7 @@ The error value for that pixel is spreaded among the 4 surrounding pixels that s
 Loyd-Steinberg error diffusion dithering proceeds from left to right, and from top to bottom of an image, one pixel at a time, calculating the error for that pixel and distributing it among the surrounding next pixels.
 
 <img src="/assets/matrix-processing.gif" alt="processing order">
+
+> <p style="font-size: 12px;">This animation highlights how the iteration proceeds: once a pixel is modified via threshold, it will never change again: This is the meaning of error distribution.</p>
 
 ## Notes on the implementation

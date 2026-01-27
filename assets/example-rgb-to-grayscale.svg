@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 662 444" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-578.602,-263.592)">
+        <g>
+            <g transform="matrix(1.68776,0,0,2.53165,258.307,-12.7253)">
+                <g>
+                    <g transform="matrix(0.5925,0,0,0.395,77.5746,119.085)">
+                        <path d="M190.367,196.835L410.367,196.835L410.367,416.835L190.367,416.835L190.367,196.835ZM630.367,196.835L850.367,196.835L850.367,416.835L630.367,416.835L630.367,196.835Z" style="fill:rgb(230,230,230);"/>
+                        <rect x="410.367" y="196.835" width="220" height="220" style="fill:rgb(210,210,210);"/>
+                    </g>
+                    <g transform="matrix(0.5925,0,0,0.395,77.5746,119.085)">
+                        <text x="243.719px" y="284.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">MEAN(R, G, B)</text>
+                        <text x="209.991px" y="312.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(252 +  188 +  251) / 3</text>
+                        <text x="210.191px" y="340.675px" style="font-family:'MPLUS1-Bold', 'M PLUS 1';font-weight:700;font-size:16px;">GRA<tspan x="243.503px 253.999px 264.287px " y="340.675px 340.675px 340.675px ">YSC</tspan>ALE</text>
+                        <g transform="matrix(16,0,0,16,390.543,340.675)">
+                        </g>
+                        <text x="311.999px" y="340.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(230.334)</text>
+                        <text x="463.719px" y="284.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">MEAN(R, G, B)</text>
+                        <text x="432.287px" y="312.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(155 +  220 + 255) / 3</text>
+                        <text x="447.887px" y="340.675px" style="font-family:'MPLUS1-Bold', 'M PLUS 1';font-weight:700;font-size:16px;">GRA<tspan x="481.199px 491.695px 501.983px " y="340.675px 340.675px 340.675px ">YSC</tspan>ALE</text>
+                        <text x="549.695px" y="340.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(210)</text>
+                        <text x="683.719px" y="284.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">MEAN(R, G, B)</text>
+                        <text x="645.399px" y="312.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(255 +   248 +   188) / 3</text>
+                        <text x="650.191px" y="340.675px" style="font-family:'MPLUS1-Bold', 'M PLUS 1';font-weight:700;font-size:16px;">GRA<tspan x="683.503px 693.999px 704.287px " y="340.675px 340.675px 340.675px ">YSC</tspan>ALE</text>
+                        <g transform="matrix(16,0,0,16,830.543,340.675)">
+                        </g>
+                        <text x="751.999px" y="340.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(230.334)</text>
+                        <path d="M190.367,195.835L190.367,417.835M850.367,195.835L850.367,417.835M410.367,196.835L410.367,416.835M630.367,196.835L630.367,416.835M190.367,196.835L850.367,196.835M190.367,416.835L850.367,416.835" style="fill:none;stroke:black;stroke-width:2px;"/>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(1.68776,0,0,2.53165,258.307,-232.725)">
+                <g>
+                    <g transform="matrix(0.5925,0,0,0.395,77.5746,119.085)">
+                        <rect x="190.367" y="196.835" width="220" height="220" style="fill:rgb(252,188,251);"/>
+                        <rect x="410.367" y="196.835" width="220" height="220" style="fill:rgb(155,220,255);"/>
+                        <rect x="630.367" y="196.835" width="220" height="220" style="fill:rgb(255,248,188);"/>
+                    </g>
+                    <g transform="matrix(0.5925,0,0,0.395,77.5746,119.085)">
+                        <text x="219.439px" y="312.675px" style="font-family:'MPLUS1-Bold', 'M PLUS 1';font-weight:700;font-size:16px;">R<tspan x="230.431px " y="312.675px ">G</tspan>B</text>
+                        <g transform="matrix(16,0,0,16,381.295,312.675)">
+                        </g>
+                        <text x="258.047px" y="312.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(252, 188, 251)</text>
+                        <text x="439.439px" y="312.675px" style="font-family:'MPLUS1-Bold', 'M PLUS 1';font-weight:700;font-size:16px;">R<tspan x="450.431px " y="312.675px ">G</tspan>B</text>
+                        <text x="478.047px" y="312.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(155, 220, 255)</text>
+                        <text x="659.439px" y="312.675px" style="font-family:'MPLUS1-Bold', 'M PLUS 1';font-weight:700;font-size:16px;">R<tspan x="670.431px " y="312.675px ">G</tspan>B</text>
+                        <g transform="matrix(16,0,0,16,821.295,312.675)">
+                        </g>
+                        <text x="698.047px" y="312.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">(255, 248, 188)</text>
+                        <path d="M190.367,195.835L190.367,417.835M850.367,195.835L850.367,417.835M410.367,196.835L410.367,416.835M630.367,196.835L630.367,416.835M190.367,196.835L850.367,196.835M190.367,416.835L850.367,416.835" style="fill:none;stroke:black;stroke-width:2px;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -41,18 +41,52 @@ Dithering with error diffusion, instead, diffuses the _quantisation error_ among
   </thead>
 </table>
 
-### Loyd-Steinberg dithering
+### Loyd Steinberg dithering
 
 An image can be represented as a matrix of pixels. The following, for example, is a 5 x 5 pixels image.
+Each pixels contains 3 values, (R, G, B), from 0 to 255, that represent the amount of Red, Green and Blue in that pixel. The values of these 3 primary colors, combined, create in the human eye the perception of a wide range of tones.
+Usually we refer to primary colors as red, yellow, and blue, but screens are built differently and produce green light instead of yellow.
 
-<img src="/assets/image-as-matrix.svg" alt="image as matrix">
+<div style="text-align: center; width: 60%; margin: auto;">
+  <img src="/assets/image-as-matrix.svg" alt="image as matrix">
+</div>
 
-In picture, the yellow cell represent the current pixel, whose error has been calculated. That error is spreaded among the 4 surrounding pixels that still haven't been parsed: the next to the right, the one right at the bottom, and the ones on the bottom left and right. The error value is divided in 16s and distributed in respectively 7/16 (right), 3/16 (bottom left), 5/16 (bottom), 1/16 (bottom right). These values come directly from Loyd-Steinberg's algorithm.
+> <p style="font-size: 12px;">Each pixel of an image is a cell in a bidimensional matrix. However, the pixel itself has 3 dimensions. </p>
 
-<img src="/assets/error-diffusion-matrix.svg" alt="error diffusion">
+In a way, the R, G, and B channels can be seen as different layers of a picture, or filters able to react to the light. From an RGB image matrix we can separate the three color channels and see how each color contributes to the whole picture.
+
+<img src="/assets/example-channels.png" alt="channels">
+
+> <p style="font-size: 12px;">Views of the same picture's Red, Green, and Blue channels: darker areas are where a color is most promininent</p>
+
+In order to simplest perform the Loyd Steinberg error diffusion algorithm, however, it's better to work on a single level, or channel. In order not to loose too much visual information it's usually better to convert the picture data from RGB into grayscale. For every pixel in every channel, the mean of the R, G, and B values respectively (all between 0 and 255) is performed. In this way, we pass from a matrix of shape (image_width, image_heigth, 3) to one of shape (image_width, image_heigth, 1). There are other methods to convert RGB to grayscale, but mean is one of the most intuitive.
+
+<img src="/assets/example-rgb-to-grayscale.svg" alt="grayscale conversion">
+
+> <p style="font-size: 12px;">RGB colors (top) converted to grayscale by calculating the mean of the R, G, and B values (bottom)</p>
+
+#### Color thresholding
+
+Each pixel is parsed once at a time. First, of all, the pixel value (0-255) is parsed via a threshold funciton, where the threshold is 128: if the value is less than it, it becomes black (0), otherwhise white (255).
+
+#### Error computation
+
+Since after threshold some tone information is lost because the original pixel value is approximated to 0 or 255, an error value is calculated, that is the difference between the sampled value and the original one.
+
+#### Error diffusion
+
+The error value for that pixel is spreaded among the 4 surrounding pixels that still haven't been parsed: the next to the right, the one right at the bottom, and the ones on the bottom left and right. The error value is distributed in respectively <sup>7</sup>&frasl;<sub>16</sub> (right), <sup>3</sup>&frasl;<sub>16</sub> (bottom left), <sup>5</sup>&frasl;<sub>16</sub> (bottom), <sup>1</sup>&frasl;<sub>16</sub> (bottom right). The sum of the splitted errors is <sup>16</sup>&frasl;<sub>16</sub> = 1. These values are what distinguishes Loyd Steinberg's algorithm.
+
+<div style="text-align: center; width: 50%; margin: auto;">
+  <img src="/assets/error-diffusion-matrix.svg" alt="error diffusion">
+</div>
+
+> <p style="font-size: 12px;">The yellow cell represents the current pixel, whose error has been calculated. </br> The purple cells are those pixels that will be affected by the error propagation</p>
+
+#### The algorithm in practice
 
 Loyd-Steinberg error diffusion dithering proceeds from left to right, and from top to bottom of an image, one pixel at a time, calculating the error for that pixel and distributing it among the surrounding next pixels.
 
-<img src="/assets/processing-order.svg" alt="processing order">
+<img src="/assets/matrix-processing.gif" alt="processing order">
 
-When a pixel is processed by the algorithm, its grayscale value (0-255) is compared to a threshold, in this case 128; if the value is greater than the threshold, the pixel becomes white (255), otherwhise black (0).
+## Notes on the implementation

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 212 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-639,-563.535)">
-        <g transform="matrix(1,0,0,1,449.633,368.7)">
+    <g transform="matrix(1,0,0,1,-657.638,-50.7699)">
+        <g transform="matrix(1,0,0,1,468.271,-144.065)">
             <rect x="260.367" y="196.835" width="70" height="70" style="fill:rgb(255,248,188);"/>
             <path d="M330.367,196.835L400.367,196.835L400.367,336.835L330.367,336.835L330.367,196.835ZM190.367,266.835L330.367,266.835L330.367,336.835L190.367,336.835L190.367,266.835Z" style="fill:rgb(252,188,251);"/>
             <g transform="matrix(16,0,0,16,300.407,237.675)">
@@ -20,7 +20,7 @@
             <g transform="matrix(16,0,0,16,384.303,307.675)">
             </g>
             <text x="346.431px" y="307.675px" style="font-family:'MPLUS1-Regular', 'M PLUS 1';font-size:16px;">1/16</text>
-            <path d="M190.367,195.835L190.367,337.835M400.367,195.835L400.367,337.835M260.367,196.835L260.367,336.835M330.367,196.835L330.367,336.835M190.367,196.835L400.367,196.835M190.367,266.835L400.367,266.835M190.367,336.835L400.367,336.835" style="fill:none;stroke:black;stroke-width:2px;"/>
+            <path d="M260.367,195.835L260.367,336.835M400.367,195.835L400.367,337.835M330.367,196.835L330.367,336.835M190.367,265.835L190.367,337.835M260.367,196.835L400.367,196.835M190.367,266.835L400.367,266.835M190.367,336.835L400.367,336.835" style="fill:none;stroke:black;stroke-width:2px;"/>
         </g>
     </g>
 </svg>
